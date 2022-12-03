@@ -71,7 +71,7 @@ function validate(user, password){
     }
 }
 if(error){
-    alert(message);
+    swal(message);
 }
   }
 
@@ -218,7 +218,6 @@ returnButton.onclick = function(){
 
 closeButton.onclick = function (){
    closeSession();
-   alert('cerraste');
 }
 
 
