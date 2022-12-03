@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body style="background:linear-gradient( 135deg, #F97794 10%, #623AA2 100%)">
+
+   
+
+    <div class="container text-center" class="card" style="width: 18rem;">
+        
+        <div class="card-header" class="row">
+            <br>
+            <h1 class="text-white text-content pb-3">Cajero Automático</h1>
+        </div>
+        
+        
+            <form id="formulario" class="row">
+
+                <!--Página de entrada para ingresar a la cuenta de x usuario-->
+
+                <div>
+                    <br>
+                    <input class="placeholder col-12 bg-light form-control" id="user" type="text" placeholder="Ingresa tu usuario" >
+                    <div id="contenedorUser">
+                    </div>
+                    <br>
+                    <input class="placeholder col-12 bg-light form-control" id="password" type="password" placeholder="Contraseña">
+                    <div id="contenedorPassword">
+                    </div>
+                    <br>
+                </div>
+
+                <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="submit" class="btn btn-outline-light">Iniciar sesión</button>
+                </div>
+
+               
+
+            </form>
+     
+    
+        <div id="menu-container" class='d-none'>
+
+            <!--Opciones de ejecucion en la cuenta del usuario-->
+
+            <div class="card-header -lg" >
+                <h4 class="text-white text-content pb-3">Seleccione una operación</h4>
+            </div>
+
+            <br>
+            <div class="list-group list-group-flush">
+            <input id='cuenta' type="button" value="Obtener saldo de la cuenta" class="btn btn-outline-light">
+            <br>
+            <input  id='ingreso' type="button" value="Ingresar dinero en la cuenta" class="btn btn-outline-light">
+            <br>
+            <input id='retiro' type="button"  value="Retirar dinero de la cuenta" class="btn btn-outline-light">
+            <br>           
+            </div>
+            <br>
+
+            
+             
+        </div>
+
+
+        <div id="operations-container" class='d-none' class="d-grid gap-2 col-6 mx-auto">
+
+            <!--Layout donde se mostrará la ejecución seleccionada-->
+            
+            <output id="current-balance" class="h4 text-white text-content pb-3" class="d-none">Balance actual</output>
+            <br>
+            <output id="amount-user" class='d-none' type="number" placeholder="monto"></output>
+            <br>
+            <input class="d-none col-12 bg-light form-control" id="user-op" type='number' placeholder="Ingresar monto">
+            <br>
+            <br>
+    
+            <div class="btn-group" role="group" aria-label="Basic example">
+            <br>
+            <button type="button" class="btn btn-outline-light" id="amount-button" type="button" class="d-none" >Submit</button>
+            <button type="button" class="btn btn-outline-light" id="return-button" class="d-none">Regresar</button>
+            <button type="button" class="btn btn-outline-light" id="cerrar-button" type="button" class="d-none">Cerrar sesión</button>
+            <br>            
+            </div>
+
+        </div> 
+        <div id="recuadro"></div>
+
+    </div>
+    
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  
+    <script src="./index2.js"></script>
+
+    
+    </script>
+
+</body>
+</html>
